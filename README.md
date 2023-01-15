@@ -25,3 +25,4 @@ addacl root
 @reboot bash start.shの絶対パス
 ```
 
+start.sh と end.sh はMinecraftサーバーのjarファイルがある階層に設置する
