@@ -24,6 +24,7 @@ addacl root
 再起動後にMinecraftサーバーを起動させる処理
 ```
 @reboot bash start.shの絶対パス
+*/5 * * * * bash check.shの絶対パス
 ```
 
 start.sh と end.sh はMinecraftサーバーのjarファイルがある階層に設置する
