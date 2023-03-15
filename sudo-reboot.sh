@@ -13,8 +13,11 @@ sleep_time=5
 
 #-----設定部分----- end
 
-screen -p 0 -S $user_name/$screen_name -X eval 'stuff "stop"\015'
-while [ -n "$(screen -list | grep -o "${1}")" ]; do
-    sleep $sleep_time
-done
+if [ -n "$(screen -ls $user_name/ | grep -o $screen_name)" ]; then
+    screen -p 0 -S $user_name/$screen_name -X eval 'stuff "stop"\015'
+    while [ -n "$(screen -ls $user_name/ | grep -o $screen_name)" ]; do
+        sleep $sleep_time
+    done
+fi
+
 reboot
