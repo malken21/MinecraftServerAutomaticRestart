@@ -36,7 +36,7 @@ addacl root
 ```sh
 @reboot bash start.shの絶対パス
 */5 0-5,7-23 * * * bash check.shの絶対パス
-0 6 * * 1,2,3,4,5,6 bash reboot.shの絶対パス
+0 6 * * 1-6 bash reboot.shの絶対パス
 ```
 
 start.sh と stop.sh はMinecraftサーバーのjarファイルがある階層に設置する
