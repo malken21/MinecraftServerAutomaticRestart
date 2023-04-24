@@ -24,7 +24,7 @@ addacl root
 日曜日の午前6時になったらMinecraftサーバーを閉じて再起動させる処理
 
 ```sh
-00 6 * * 0 sudo bash sudo-reboot.shの絶対パス
+0 6 * * 0 sudo bash sudo-reboot.shの絶対パス
 ```
 
 ## crontab -e
