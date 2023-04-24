@@ -30,7 +30,9 @@ addacl root
 ## crontab -e
 
 再起動後にMinecraftサーバーを起動させる処理
+
 5分毎に午前6時以外の時間にMinecraftサーバーが起動しているかチェックする処理
+
 日曜日以外の午前6時にMinecraftサーバーを再起動させる処理
 
 ```sh
