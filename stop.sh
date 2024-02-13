@@ -11,9 +11,9 @@ sleep_time=5
 #-----設定部分----- end
 
 cd $(dirname $0)
-if [ -n "$(screen -ls | grep -o $screen_name\s)" ]; then
+if [ -n "$(screen -ls | grep -o $screen_name"\s")" ]; then
     screen -p 0 -S $screen_name -X eval 'stuff "stop"\015'
-    while [ -n "$(screen -ls | grep -o $screen_name\s)" ]; do
+    while [ -n "$(screen -ls | grep -o $screen_name"\s")" ]; do
         sleep $sleep_time
     done
 fi
